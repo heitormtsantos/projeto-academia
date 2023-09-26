@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Sistema de Academia</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="supino-animation"></div>
+    <div class="login-form">
+      <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+        <h3>Login</h3>
+        <form action="login.php" method="post">
+            <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Usuario">
+               <input id="pass" type="password" name="Password" placeholder="Senha.."> </div>
+                <input type="submit" name="" value="Login">
+        </form> 
+        <a href="#">Esqueci minha senha<br> </a>
+        <div class="text-center">
+          <p>
+          <a style="color: #59238F;" href="cadastro.html">Clique aqui para se cadastrar</a>
+        </p>
+        </div>
+        
+        
+    </div>
+    </div>
+  </div>
+
+  <script>
+    // Aguarda 3 segundos e exibe o formulário de login
+    setTimeout(function() {
+      var supinoAnimation = document.querySelector('.supino-animation');
+      var loginForm = document.querySelector('.login-form');
+
+      supinoAnimation.style.display = 'none';
+      loginForm.style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
